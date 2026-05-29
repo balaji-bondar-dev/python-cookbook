@@ -180,3 +180,16 @@ df.to_json(
     os.path.join(output_dir, "sales-data-processed.json"), orient="records", lines=True
 )
 
+
+# Error handling for the main function
+result = 10 / 0  # This will raise a ZeroDivisionError
+
+"hello world" + 5  # This will raise a TypeError
+
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("You cannot divide by zero!")
+
+
+
